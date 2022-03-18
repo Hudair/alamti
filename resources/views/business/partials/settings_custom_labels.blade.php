@@ -18,6 +18,7 @@
                     ['class' => 'form-control', 'id' => 'custom_payment_2']); !!}
             </div>
         </div>
+        <!--
         <div class="col-sm-4">
             <div class="form-group">
                 {!! Form::label('custom_payment_3_label', __('lang_v1.custom_payment_3')); !!}
@@ -53,6 +54,7 @@
                     ['class' => 'form-control', 'id' => 'custom_payment_7']); !!}
             </div>
         </div>
+                -->
         <div class="clearfix"></div>
         <div class="col-sm-12">
             <h4>@lang('lang_v1.labels_for_contact_custom_fields'):</h4>
@@ -71,6 +73,7 @@
                     ['class' => 'form-control', 'id' => 'contact_custom_field_2_label']); !!}
             </div>
         </div>
+        <!--
         <div class="col-sm-3">
             <div class="form-group">
                 {!! Form::label('contact_custom_field_3_label', __('lang_v1.contact_custom_field3')); !!}
@@ -127,10 +130,12 @@
                     ['class' => 'form-control', 'id' => 'contact_custom_field_10_label']); !!}
             </div>
         </div>
+                -->
         <div class="clearfix"></div>
         <div class="col-sm-12">
             <h4>@lang('lang_v1.labels_for_product_custom_fields'):</h4>
         </div>
+
         <div class="col-sm-3">
             <div class="form-group">
                 {!! Form::label('product_custom_field_1_label', __('lang_v1.product_custom_field1')); !!}
@@ -145,6 +150,7 @@
                     ['class' => 'form-control', 'id' => 'product_custom_field_2_label']); !!}
             </div>
         </div>
+        <!--
         <div class="col-sm-3">
             <div class="form-group">
                 {!! Form::label('product_custom_field_3_label', __('lang_v1.product_custom_field3')); !!}
@@ -159,6 +165,7 @@
                     ['class' => 'form-control', 'id' => 'product_custom_field_4_label']); !!}
             </div>
         </div>
+                -->
         <div class="clearfix"></div>
         <div class="col-sm-12">
             <h4>@lang('lang_v1.labels_for_location_custom_fields'):</h4>
@@ -177,6 +184,7 @@
                     ['class' => 'form-control', 'id' => 'location_custom_field_2_label']); !!}
             </div>
         </div>
+        <!--
         <div class="col-sm-3">
             <div class="form-group">
                 {!! Form::label('location_custom_field_3_label', __('lang_v1.location_custom_field3')); !!}
@@ -191,6 +199,7 @@
                     ['class' => 'form-control', 'id' => 'location_custom_field_4_label']); !!}
             </div>
         </div>
+                -->
         <div class="clearfix"></div>
         <div class="col-sm-12">
             <h4>@lang('lang_v1.labels_for_user_custom_fields'):</h4>
@@ -209,6 +218,7 @@
                     ['class' => 'form-control', 'id' => 'user_custom_field_2_label']); !!}
             </div>
         </div>
+        <!--
         <div class="col-sm-3">
             <div class="form-group">
                 {!! Form::label('user_custom_field_3_label', __('lang_v1.user_custom_field3')); !!}
@@ -223,6 +233,7 @@
                     ['class' => 'form-control', 'id' => 'user_custom_field_4_label']); !!}
             </div>
         </div>
+                -->
         <div class="clearfix"></div>
         <div class="col-sm-12">
             <h4>@lang('lang_v1.labels_for_purchase_custom_fields'):</h4>
@@ -254,6 +265,7 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="col-sm-6">
             <div class="form-group">
                 {!! Form::label('purchase_custom_field_3_label', __('lang_v1.product_custom_field3')); !!}
@@ -283,6 +295,7 @@
                 </div>
             </div>
         </div>
+                    -->
         <div class="clearfix"></div>
                 <div class="col-sm-12">
             <h4>@lang('lang_v1.labels_for_purchase_shipping_custom_fields'):</h4>
@@ -313,6 +326,7 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="col-sm-6">
             <div class="form-group">
                 {!! Form::label('purchase_shipping_custom_field_3_label', __('lang_v1.custom_field', ['number' => 3])) !!}
@@ -352,6 +366,7 @@
                 </div>
             </div>
         </div>
+                -->
         <div class="clearfix"></div>
         <div class="col-sm-12">
             <h4>@lang('lang_v1.labels_for_sell_custom_fields'):</h4>
@@ -382,6 +397,7 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="col-sm-6">
             <div class="form-group">
                 {!! Form::label('sell_custom_field_3_label', __('lang_v1.product_custom_field3')); !!}
@@ -408,6 +424,7 @@
                 </div>
             </div>
         </div>
+                    -->
         <div class="clearfix"></div>
         <div class="col-sm-12">
             <h4>@lang('lang_v1.labels_for_sale_shipping_custom_fields'):</h4>
@@ -446,6 +463,7 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="col-sm-6">
             <div class="form-group">
                 {!! Form::label('shipping_custom_field_3_label', __('lang_v1.custom_field', ['number' => 3])) !!}
@@ -497,6 +515,7 @@
                 </div>
             </div>
         </div>
+                -->
         <div class="clearfix"></div>
         <div class="col-sm-12">
             <h4>@lang('lang_v1.labels_for_types_of_service_custom_fields'):</h4>
@@ -515,6 +534,7 @@
                     ['class' => 'form-control', 'id' => 'types_of_service_custom_field_2_label']); !!}
             </div>
         </div>
+        <!--
         <div class="col-sm-3">
             <div class="form-group">
                 {!! Form::label('types_of_service_custom_field_3_label', __('lang_v1.service_custom_field_3')); !!}
@@ -545,3 +565,4 @@
         </div>
     </div>
 </div>
+                -->

@@ -31,7 +31,7 @@
                     <tr>
                         <th>@lang( 'invoice.name' )</th>
                         <th>@lang( 'lang_v1.location_id' )</th>
-                        <th>@lang( 'business.landmark' )</th>
+                      <!--  <th>@lang( 'business.landmark' )</th> -->
                         <th>@lang( 'business.city' )</th>
                         <th>@lang( 'business.zip_code' )</th>
                         <th>@lang( 'business.state' )</th>

@@ -33,6 +33,7 @@
                         <a href="#" class="list-group-item text-center">@lang('superadmin::lang.additional_js_css')</a>
                     </div>
                 </div>
+                
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 pos-tab">
                     @include('superadmin::superadmin_settings.partials.super_admin_settings')
                     @include('superadmin::superadmin_settings.partials.application_settings')
@@ -44,7 +45,7 @@
                     @include('superadmin::superadmin_settings.partials.additional_js_css')
                 </div>
             </div>
-            <!--  </pos-tab-container> -->
+            
         </div>
     </div>
     <div class="row">

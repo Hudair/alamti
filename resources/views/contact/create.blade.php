@@ -125,6 +125,7 @@
                     </div>
                 </div>
             </div>
+            <!--
 
             <div class="col-md-3">
                 <div class="form-group">
@@ -148,6 +149,7 @@
                     </div>
                 </div>
             </div>
+-->
             <div class="col-md-3">
                 <div class="form-group">
                     {!! Form::label('email', __('business.email') . ':') !!}
@@ -334,11 +336,14 @@
                 </div>
             </div>
           </div>
+          <!--
 
           <div class="clearfix"></div>
           <div class="col-md-12">
             <hr/>
           </div>
+
+          
           @php
             $custom_labels = json_decode(session('business.custom_labels'), true);
             $contact_custom_field1 = !empty($custom_labels['contact']['custom_field_1']) ? $custom_labels['contact']['custom_field_1'] : __('lang_v1.contact_custom_field1');
@@ -422,6 +427,7 @@
                     'placeholder' => $contact_custom_field10]); !!}
             </div>
           </div>
+                -->
           <div class="col-md-12 shipping_addr_div"><hr></div>
           <div class="col-md-8 col-md-offset-2 shipping_addr_div mb-10" >
               <strong>{{__('lang_v1.shipping_address')}}</strong><br>
