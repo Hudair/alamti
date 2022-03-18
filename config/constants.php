@@ -14,6 +14,7 @@ return [
         'ar' => ['full_name' => 'Arabic - العَرَبِيَّة', 'short_name' => 'Arabic']
   
     ],
+    
     'langs_rtl' => ['ar'],
     'non_utf8_languages' => ['ar'],
     
