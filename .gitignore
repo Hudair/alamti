@@ -9,7 +9,6 @@
 Homestead.json
 Homestead.yaml
 npm-debug.log
-.env
 /public/uploads/business_logos
 /public/uploads/documents
 /public/uploads/img
@@ -17,4 +16,3 @@ npm-debug.log
 /public/uploads/invoice_logos
 /public/uploads/UltimatePOS
 /public/mix-manifest.json
-/.env

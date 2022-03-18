@@ -1,4 +1,6 @@
+<!--
 @php
+
   $custom_labels = json_decode(session('business.custom_labels'), true);
   $user_custom_field1 = !empty($custom_labels['user']['custom_field_1']) ? $custom_labels['user']['custom_field_1'] : __('lang_v1.user_custom_field1');
   $user_custom_field2 = !empty($custom_labels['user']['custom_field_2']) ? $custom_labels['user']['custom_field_2'] : __('lang_v1.user_custom_field2');
@@ -88,6 +90,7 @@
     {!! Form::label('current_address', __( 'lang_v1.current_address') . ':') !!}
     {!! Form::textarea('current_address', !empty($user->current_address) ? $user->current_address : null, ['class' => 'form-control', 'placeholder' => __( 'lang_v1.current_address'), 'rows' => 3 ]); !!}
 </div>
+-->
 <div class="col-md-12">
     <hr>
     <h4>@lang('lang_v1.bank_details'):</h4>

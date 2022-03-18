@@ -15,12 +15,14 @@
   <div class="row">
     <div class="col-md-12">
   @component('components.widget')
+  <!--
       <div class="col-md-2">
         <div class="form-group">
           {!! Form::label('surname', __( 'business.prefix' ) . ':') !!}
             {!! Form::text('surname', null, ['class' => 'form-control', 'placeholder' => __( 'business.prefix_placeholder' ) ]); !!}
         </div>
       </div>
+-->
       <div class="col-md-5">
         <div class="form-group">
           {!! Form::label('first_name', __( 'business.first_name' ) . ':*') !!}

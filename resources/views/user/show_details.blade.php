@@ -1,8 +1,10 @@
 @php
     $custom_labels = json_decode(session('business.custom_labels'), true);
 @endphp
+<!--
 <div class="row">
 	<div class="col-md-12">
+		
 		<div class="col-md-12">
 			<h4>@lang('lang_v1.more_info')</h4>
 		</div>
@@ -46,6 +48,7 @@
 			<strong>@lang('lang_v1.current_address'):</strong><br>
 			<p>{{$user->current_address ?? ''}}</p>
 		</div>
+-->
 		<div class="clearfix"></div>
 		<hr>
 		<div class="col-md-12">
@@ -73,3 +76,4 @@
 	    @endif
 	</div>
 </div>
+-->

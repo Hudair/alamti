@@ -244,12 +244,14 @@
 <div class="col-md-4">
     <div class="form-group">
         {!! Form::label('surname', __('business.prefix') . ':') !!}
+        <!--
         <div class="input-group">
             <span class="input-group-addon">
                 <i class="fa fa-info"></i>
             </span>
             {!! Form::text('surname', null, ['class' => 'form-control','placeholder' => __('business.prefix_placeholder')]); !!}
         </div>
+-->
     </div>
 </div>
 
