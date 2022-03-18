@@ -22,7 +22,7 @@ class CreateBusinessLocationsTable extends Migration
             $table->string('country', 100);
             $table->string('state', 100);
             $table->string('city', 100);
-            $table->char('zip_code', 7);
+            $table->char('zip_code')->nullable();
             $table->string('mobile')->nullable();
             $table->string('alternate_number')->nullable();
             $table->string('email')->nullable();

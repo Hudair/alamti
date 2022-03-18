@@ -69,7 +69,7 @@
     </div>
     </div>
 </div>
-
+<!--
 <div class="col-md-6">
     <div class="form-group">
         {!! Form::label('alternate_number', __('business.alternate_number') . ':') !!}
@@ -82,6 +82,7 @@
     </div>
 </div>
 
+-->
 <div class="clearfix"></div>
 
 <div class="col-md-6">
@@ -119,6 +120,7 @@
     </div>
     </div>
 </div>
+<!--
 <div class="col-md-6">
     <div class="form-group">
     {!! Form::label('zip_code', __('business.zip_code') . ':*') !!}
@@ -126,10 +128,12 @@
         <span class="input-group-addon">
             <i class="fa fa-map-marker"></i>
         </span>
-        {!! Form::text('zip_code', null, ['class' => 'form-control','placeholder' => __('business.zip_code_placeholder'), 'required']); !!}
+        {!! Form::text('zip_code', null, ['class' => 'form-control','placeholder' => __('business.zip_code')]); !!}
     </div>
     </div>
 </div>
+-->
+<!--
 <div class="clearfix"></div>
 <div class="col-md-6">
     <div class="form-group">
@@ -142,6 +146,7 @@
     </div>
     </div>
 </div>
+-->
 <div class="col-md-6">
     <div class="form-group">
         {!! Form::label('time_zone', __('business.time_zone') . ':*') !!}
@@ -241,10 +246,11 @@
 
 <fieldset>
 <legend>@lang('business.owner_info')</legend>
+<!--
 <div class="col-md-4">
     <div class="form-group">
         {!! Form::label('surname', __('business.prefix') . ':') !!}
-        <!--
+        
         <div class="input-group">
             <span class="input-group-addon">
                 <i class="fa fa-info"></i>

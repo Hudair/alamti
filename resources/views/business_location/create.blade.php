@@ -38,8 +38,8 @@
         </div>
         <div class="col-sm-6">
           <div class="form-group">
-            {!! Form::label('zip_code', __( 'business.zip_code' ) . ':*') !!}
-              {!! Form::text('zip_code', null, ['class' => 'form-control', 'placeholder' => __( 'business.zip_code'), 'required' ]); !!}
+            {!! Form::label('zip_code', __( 'business.zip_code' ) . ':') !!}
+              {!! Form::text('zip_code', null, ['class' => 'form-control', 'placeholder' => __( 'business.zip_code') ]); !!}
           </div>
         </div>
         <div class="clearfix"></div>
@@ -62,12 +62,14 @@
             {!! Form::text('mobile', null, ['class' => 'form-control', 'placeholder' => __( 'business.mobile')]); !!}
           </div>
         </div>
+        <!--
         <div class="col-sm-6">
           <div class="form-group">
             {!! Form::label('alternate_number', __( 'business.alternate_number' ) . ':') !!}
             {!! Form::text('alternate_number', null, ['class' => 'form-control', 'placeholder' => __( 'business.alternate_number')]); !!}
           </div>
         </div>
+-->
         <div class="clearfix"></div>
         <div class="col-sm-6">
           <div class="form-group">

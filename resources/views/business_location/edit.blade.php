@@ -63,12 +63,14 @@
             {!! Form::text('mobile', $location->mobile, ['class' => 'form-control', 'placeholder' => __( 'business.mobile')]); !!}
           </div>
         </div>
+        <!--
         <div class="col-sm-6">
           <div class="form-group">
             {!! Form::label('alternate_number', __( 'business.alternate_number' ) . ':') !!}
             {!! Form::text('alternate_number', $location->alternate_number, ['class' => 'form-control', 'placeholder' => __( 'business.alternate_number')]); !!}
           </div>
         </div>
+-->
         <div class="clearfix"></div>
         <div class="col-sm-6">
           <div class="form-group">
