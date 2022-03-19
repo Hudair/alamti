@@ -16,6 +16,7 @@
               {!! Form::text('name', null, ['class' => 'form-control', 'required', 'placeholder' => __( 'invoice.name' ) ]); !!}
           </div>
         </div>
+        <!--
         <div class="clearfix"></div>
         <div class="col-sm-6">
           <div class="form-group">
@@ -29,6 +30,7 @@
               {!! Form::text('landmark', null, ['class' => 'form-control', 'placeholder' => __( 'business.landmark' ) ]); !!}
           </div>
         </div>
+-->
         <div class="clearfix"></div>
         <div class="col-sm-6">
           <div class="form-group">
@@ -36,6 +38,7 @@
               {!! Form::text('city', null, ['class' => 'form-control', 'placeholder' => __( 'business.city'), 'required' ]); !!}
           </div>
         </div>
+        <!--
         <div class="col-sm-6">
           <div class="form-group">
             {!! Form::label('zip_code', __( 'business.zip_code' ) . ':') !!}
@@ -43,6 +46,7 @@
           </div>
         </div>
         <div class="clearfix"></div>
+-->
         <div class="col-sm-6">
           <div class="form-group">
             {!! Form::label('state', __( 'business.state' ) . ':*') !!}

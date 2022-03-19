@@ -73,11 +73,13 @@
                             <td class="footer_total_advance_payment"></td>'
                             <td class="footer_total_custom_pay_1"></td>
                             <td class="footer_total_custom_pay_2"></td>
+                            <!--
                             <td class="footer_total_custom_pay_3"></td>
                             <td class="footer_total_custom_pay_4"></td>
                             <td class="footer_total_custom_pay_5"></td>
                             <td class="footer_total_custom_pay_6"></td>
                             <td class="footer_total_custom_pay_7"></td>
+-->
                             <td class="footer_total_other_payments"></td>
                             <td class="footer_total"></td>
                             <td></td>

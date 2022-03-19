@@ -96,6 +96,7 @@
           </td>
         </tr>
       @endif
+      <!--
       @if(array_key_exists('custom_pay_3', $payment_types))
         <tr>
           <td>
@@ -161,6 +162,7 @@
           </td>
         </tr>
       @endif
+-->
       <tr>
         <td>
           @lang('cash_register.other_payments'):
