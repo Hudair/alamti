@@ -307,7 +307,6 @@ CREATE TABLE IF NOT EXISTS `business_locations` (
   `country` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `state` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `city` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `zip_code` char(7) COLLATE utf8mb4_unicode_ci NOT NULL,
   `invoice_scheme_id` int(10) unsigned NOT NULL,
   `invoice_layout_id` int(10) unsigned NOT NULL,
   `sale_invoice_layout_id` int(11) DEFAULT NULL,
@@ -316,7 +315,7 @@ CREATE TABLE IF NOT EXISTS `business_locations` (
   `receipt_printer_type` enum('browser','printer') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'browser',
   `printer_id` int(11) DEFAULT NULL,
   `mobile` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `alternate_number` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+
   `email` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `website` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `featured_products` text COLLATE utf8mb4_unicode_ci,
@@ -344,7 +343,7 @@ CREATE TABLE IF NOT EXISTS `business_locations` (
 
 -- Dumping data for table alamatii.business_locations: ~0 rows (approximately)
 /*!40000 ALTER TABLE `business_locations` DISABLE KEYS */;
-INSERT INTO `business_locations` (`id`, `business_id`, `location_id`, `name`, `landmark`, `country`, `state`, `city`, `zip_code`, `invoice_scheme_id`, `invoice_layout_id`, `sale_invoice_layout_id`, `selling_price_group_id`, `print_receipt_on_invoice`, `receipt_printer_type`, `printer_id`, `mobile`, `alternate_number`, `email`, `website`, `featured_products`, `is_active`, `default_payment_accounts`, `custom_field1`, `custom_field2`, `custom_field3`, `custom_field4`, `deleted_at`, `created_at`, `updated_at`) VALUES
+INSERT INTO `business_locations` (`id`, `business_id`, `location_id`, `name`, `landmark`, `country`, `state`, `city`, `invoice_scheme_id`, `invoice_layout_id`, `sale_invoice_layout_id`, `selling_price_group_id`, `print_receipt_on_invoice`, `receipt_printer_type`, `printer_id`, `mobile`,  `email`, `website`, `featured_products`, `is_active`, `default_payment_accounts`, `custom_field1`, `custom_field2`, `custom_field3`, `custom_field4`, `deleted_at`, `created_at`, `updated_at`) VALUES
 	(1, 1, 'BL0001', 'Mansour', 'm', 'Saudi Arabia', 'Qassim', 'Bur', '012', 1, 1, 1, NULL, 1, 'browser', NULL, '', '', '', '', NULL, 1, '{"cash":{"is_enabled":1,"account":null},"card":{"is_enabled":1,"account":null},"cheque":{"is_enabled":1,"account":null},"bank_transfer":{"is_enabled":1,"account":null},"other":{"is_enabled":1,"account":null},"custom_pay_1":{"is_enabled":1,"account":null},"custom_pay_2":{"is_enabled":1,"account":null}', NULL, NULL, NULL, NULL, NULL, '2022-03-17 22:26:30', '2022-03-17 22:26:30');
 /*!40000 ALTER TABLE `business_locations` ENABLE KEYS */;
 
@@ -446,9 +445,9 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `supplier_business_name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `prefix` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `first_name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+
   `middle_name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `last_name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+
   `email` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `contact_id` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `contact_status` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'active',
@@ -458,11 +457,10 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `country` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `address_line_1` text COLLATE utf8mb4_unicode_ci,
   `address_line_2` text COLLATE utf8mb4_unicode_ci,
-  `zip_code` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `dob` date DEFAULT NULL,
   `mobile` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `landline` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `alternate_number` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+
   `pay_term_number` int(11) DEFAULT NULL,
   `pay_term_type` enum('days','months') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `credit_limit` decimal(22,4) DEFAULT NULL,
@@ -507,7 +505,7 @@ CREATE TABLE IF NOT EXISTS `contacts` (
 
 -- Dumping data for table alamatii.contacts: ~1 rows (approximately)
 /*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
-INSERT INTO `contacts` (`id`, `business_id`, `type`, `supplier_business_name`, `name`, `prefix`, `first_name`, `middle_name`, `last_name`, `email`, `contact_id`, `contact_status`, `tax_number`, `city`, `state`, `country`, `address_line_1`, `address_line_2`, `zip_code`, `dob`, `mobile`, `landline`, `alternate_number`, `pay_term_number`, `pay_term_type`, `credit_limit`, `created_by`, `balance`, `total_rp`, `total_rp_used`, `total_rp_expired`, `is_default`, `shipping_address`, `shipping_custom_field_details`, `is_export`, `export_custom_field_1`, `export_custom_field_2`, `export_custom_field_3`, `export_custom_field_4`, `export_custom_field_5`, `export_custom_field_6`, `position`, `customer_group_id`, `custom_field1`, `custom_field2`, `custom_field3`, `custom_field4`, `custom_field5`, `custom_field6`, `custom_field7`, `custom_field8`, `custom_field9`, `custom_field10`, `deleted_at`, `created_at`, `updated_at`) VALUES
+INSERT INTO `contacts` (`id`, `business_id`, `type`, `supplier_business_name`, `name`, `prefix`,  `middle_name`, `email`, `contact_id`, `contact_status`, `tax_number`, `city`, `state`, `country`, `address_line_1`, `address_line_2`, `dob`, `mobile`, `landline`, `pay_term_number`, `pay_term_type`, `credit_limit`, `created_by`, `balance`, `total_rp`, `total_rp_used`, `total_rp_expired`, `is_default`, `shipping_address`, `shipping_custom_field_details`, `is_export`, `export_custom_field_1`, `export_custom_field_2`, `export_custom_field_3`, `export_custom_field_4`, `export_custom_field_5`, `export_custom_field_6`, `position`, `customer_group_id`, `custom_field1`, `custom_field2`, `custom_field3`, `custom_field4`, `custom_field5`, `custom_field6`, `custom_field7`, `custom_field8`, `custom_field9`, `custom_field10`, `deleted_at`, `created_at`, `updated_at`) VALUES
 	(1, 1, 'customer', NULL, 'Walk-In Customer', NULL, NULL, NULL, NULL, NULL, 'CO0001', 'active', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, 0.0000, 1, 0.0000, 0, 0, 0, 1, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2022-03-17 22:26:30', '2022-03-17 22:26:30');
 /*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
 
@@ -861,10 +859,9 @@ CREATE TABLE IF NOT EXISTS `invoice_layouts` (
   `show_landmark` tinyint(1) NOT NULL DEFAULT '1',
   `show_city` tinyint(1) NOT NULL DEFAULT '1',
   `show_state` tinyint(1) NOT NULL DEFAULT '1',
-  `show_zip_code` tinyint(1) NOT NULL DEFAULT '1',
   `show_country` tinyint(1) NOT NULL DEFAULT '1',
   `show_mobile_number` tinyint(1) NOT NULL DEFAULT '1',
-  `show_alternate_number` tinyint(1) NOT NULL DEFAULT '0',
+
   `show_email` tinyint(1) NOT NULL DEFAULT '0',
   `show_tax_1` tinyint(1) NOT NULL DEFAULT '1',
   `show_tax_2` tinyint(1) NOT NULL DEFAULT '0',
@@ -903,7 +900,7 @@ CREATE TABLE IF NOT EXISTS `invoice_layouts` (
 
 -- Dumping data for table alamatii.invoice_layouts: ~1 rows (approximately)
 /*!40000 ALTER TABLE `invoice_layouts` DISABLE KEYS */;
-INSERT INTO `invoice_layouts` (`id`, `name`, `header_text`, `invoice_no_prefix`, `quotation_no_prefix`, `invoice_heading`, `sub_heading_line1`, `sub_heading_line2`, `sub_heading_line3`, `sub_heading_line4`, `sub_heading_line5`, `invoice_heading_not_paid`, `invoice_heading_paid`, `quotation_heading`, `sub_total_label`, `discount_label`, `tax_label`, `total_label`, `round_off_label`, `total_due_label`, `paid_label`, `show_client_id`, `client_id_label`, `client_tax_label`, `date_label`, `date_time_format`, `show_time`, `show_brand`, `show_sku`, `show_cat_code`, `show_expiry`, `show_lot`, `show_image`, `show_sale_description`, `sales_person_label`, `show_sales_person`, `table_product_label`, `table_qty_label`, `table_unit_price_label`, `table_subtotal_label`, `cat_code_label`, `logo`, `show_logo`, `show_business_name`, `show_location_name`, `show_landmark`, `show_city`, `show_state`, `show_zip_code`, `show_country`, `show_mobile_number`, `show_alternate_number`, `show_email`, `show_tax_1`, `show_tax_2`, `show_barcode`, `show_payments`, `show_customer`, `customer_label`, `commission_agent_label`, `show_commission_agent`, `show_reward_point`, `highlight_color`, `footer_text`, `module_info`, `common_settings`, `is_default`, `business_id`, `show_qr_code`, `qr_code_fields`, `design`, `cn_heading`, `cn_no_label`, `cn_amount_label`, `table_tax_headings`, `show_previous_bal`, `prev_bal_label`, `change_return_label`, `product_custom_fields`, `contact_custom_fields`, `location_custom_fields`, `created_at`, `updated_at`) VALUES
+INSERT INTO `invoice_layouts` (`id`, `name`, `header_text`, `invoice_no_prefix`, `quotation_no_prefix`, `invoice_heading`, `sub_heading_line1`, `sub_heading_line2`, `sub_heading_line3`, `sub_heading_line4`, `sub_heading_line5`, `invoice_heading_not_paid`, `invoice_heading_paid`, `quotation_heading`, `sub_total_label`, `discount_label`, `tax_label`, `total_label`, `round_off_label`, `total_due_label`, `paid_label`, `show_client_id`, `client_id_label`, `client_tax_label`, `date_label`, `date_time_format`, `show_time`, `show_brand`, `show_sku`, `show_cat_code`, `show_expiry`, `show_lot`, `show_image`, `show_sale_description`, `sales_person_label`, `show_sales_person`, `table_product_label`, `table_qty_label`, `table_unit_price_label`, `table_subtotal_label`, `cat_code_label`, `logo`, `show_logo`, `show_business_name`, `show_location_name`, `show_landmark`, `show_city`, `show_state`, `show_country`, `show_mobile_number`,  `show_email`, `show_tax_1`, `show_tax_2`, `show_barcode`, `show_payments`, `show_customer`, `customer_label`, `commission_agent_label`, `show_commission_agent`, `show_reward_point`, `highlight_color`, `footer_text`, `module_info`, `common_settings`, `is_default`, `business_id`, `show_qr_code`, `qr_code_fields`, `design`, `cn_heading`, `cn_no_label`, `cn_amount_label`, `table_tax_headings`, `show_previous_bal`, `prev_bal_label`, `change_return_label`, `product_custom_fields`, `contact_custom_fields`, `location_custom_fields`, `created_at`, `updated_at`) VALUES
 	(1, 'Default', NULL, 'Invoice No.', NULL, 'Invoice', NULL, NULL, NULL, NULL, NULL, '', '', NULL, 'Subtotal', 'Discount', 'Tax', 'Total', NULL, 'Total Due', 'Total Paid', 0, NULL, NULL, 'Date', NULL, 1, 0, 1, 1, 0, 0, 0, 0, NULL, 0, 'Product', 'Quantity', 'Unit Price', 'Subtotal', NULL, NULL, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 'Customer', NULL, 0, 0, '#000000', '', NULL, NULL, 1, 1, 0, NULL, 'classic', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, '2022-03-17 22:26:30', '2022-03-17 22:26:30');
 /*!40000 ALTER TABLE `invoice_layouts` ENABLE KEYS */;
 
@@ -2332,8 +2329,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_type` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'user',
   `surname` char(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `first_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `last_name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+
+
   `username` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -2384,7 +2381,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 -- Dumping data for table alamatii.users: ~2 rows (approximately)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` (`id`, `user_type`, `surname`, `first_name`, `last_name`, `username`, `email`, `password`, `language`, `contact_no`, `address`, `remember_token`, `business_id`, `max_sales_discount_percent`, `allow_login`, `status`, `crm_contact_id`, `is_cmmsn_agnt`, `cmmsn_percent`, `selected_contacts`, `dob`, `gender`, `marital_status`, `blood_group`, `contact_number`, `alt_number`, `family_number`, `fb_link`, `twitter_link`, `social_media_1`, `social_media_2`, `permanent_address`, `current_address`, `guardian_name`, `custom_field_1`, `custom_field_2`, `custom_field_3`, `custom_field_4`, `bank_details`, `id_proof_name`, `id_proof_number`, `deleted_at`, `created_at`, `updated_at`) VALUES
+INSERT INTO `users` (`id`, `user_type`, `surname`, `username`, `email`, `password`, `language`, `contact_no`, `address`, `remember_token`, `business_id`, `max_sales_discount_percent`, `allow_login`, `status`, `crm_contact_id`, `is_cmmsn_agnt`, `cmmsn_percent`, `selected_contacts`, `dob`, `gender`, `marital_status`, `blood_group`, `contact_number`, `alt_number`, `family_number`, `fb_link`, `twitter_link`, `social_media_1`, `social_media_2`, `permanent_address`, `current_address`, `guardian_name`, `custom_field_1`, `custom_field_2`, `custom_field_3`, `custom_field_4`, `bank_details`, `id_proof_name`, `id_proof_number`, `deleted_at`, `created_at`, `updated_at`) VALUES
 	(1, 'user', NULL, 'Mansour', 'Ahmed', 'mansour', NULL, '$2y$10$f.UaBErFInA64DqtOm6VuOUOlYbBocnO//QLENBZLpLXZxYQNBmqq', 'ar', NULL, NULL, NULL, 1, NULL, 1, 'active', NULL, 0, 0.00, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '{"account_holder_name":null,"account_number":null,"bank_name":null,"bank_code":null,"branch":null,"tax_payer_id":null}', NULL, NULL, NULL, '2022-03-17 22:26:30', '2022-03-17 19:57:04');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
